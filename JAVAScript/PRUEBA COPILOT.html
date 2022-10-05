@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ejercicio 1</title>
+</head>
+<body>
+
+<script>
+
+// dime la fecha actual y la misma en calendario maya
+
+var fecha = new Date();
+var dia = fecha.getDate();
+
+var mes = fecha.getMonth();
+
+var anio = fecha.getFullYear();
+
+var fechaM = new Date(anio, mes, dia);
+
+var fechaM = fechaM.toDateString();
+
+var fechaM = fechaM.split(" ");
+
+var fechaM = fechaM[1] + " " + fechaM[2] + ", " + fechaM[3];
+
+document.write("La fecha actual es: " + fecha + "<br>");
+
+document.write("La fecha en calendario maya es: " + fechaM);
+
+
+
+</script>
+
+
+<script>
+
+//dame los parametros de mi pantalla
+
+var ancho = screen.width;
+
+var alto = screen.height;
+
+var color = screen.colorDepth;
+
+document.write("El ancho de la pantalla es: " + ancho + "<br>");
+
+document.write("El alto de la pantalla es: " + alto + "<br>");
+
+document.write("La profundidad de color de la pantalla es: " + color + "<br>");
+
+
+
+</script>
+
+
+
+<h1>ejercicio 1</h1>
+<p>hola mundo</p>
+
+
+    
+<!-- creame un desplegable con varias opciones y dos categorias-->
+
+<select name="select">
+
+<optgroup label="categoria 1">
+<option value="1">opcion 1</option>
+<option value="2">opcion 2</option>
+<option value="3">opcion 3</option>
+</optgroup>
+
+<optgroup label="categoria 2">
+<option value="4">opcion 4</option>
+<option value="5">opcion 5</option>
+<option value="6">opcion 6</option>
+
+
+</optgroup>
+</select>
+
+<!-- muestrame una foto de la reina isabel-->
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Reina_Isabel_II_de_Espa%C3%B1a.jpg/220px-Reina_Isabel_II_de_Espa%C3%B1a.jpg" alt="reina isabel" width="200" height="200">
+
+<!-- crea un formulario con un campo de texto y un boton de enviar-->
+
+<form action="action_page.php">
+<input type="text" name="firstname" value="John">
+<input type="submit" value="Submit">
+
+
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion de textos</title>
+</head>
+<body>
+    
+<script type ="text/javascript">
+    var texto= new String("Prueba de texto");
+
+    documento.write("Numero de letras de la cadena: " + texto.length + "<br>");
+    documento.write("La cadena en mayusculas: " + texto.toUpperCase() + "<br>");
+    documento.write("La cadena en minusculas: " + texto.toLowerCase() + "<br>");
+    documento.write("La cadena con la primera letra en mayuscula: " + texto.charAt(0).toUpperCase() + texto.slice(1) + "<br>");
+    documento.write("Cursiva: " + texto.italics() + "<br>");
+    documento.write("Negrita: " + texto.bold() + "<br>");
+    documento.write("Subrayado: " + texto.underline() + "<br>");
+    documento.write("Tachado: " + texto.strike() + "<br>");
+    documento.write("Cadena invertida: " + texto.split("").reverse().join("") + "<br>");
+    documento.write("Cadena con color rojo: " + texto.fontcolor("red") + "<br>");
+    documento.write("Texto muy grande: " + texto.big() + "<br>");
+
+</script>
+
+</body>
+</html>

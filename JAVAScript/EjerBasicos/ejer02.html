@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*    rea una página Web que muestre la fecha y hora actual con el siguiente formato:
+Hoy es lunes, 28 de Noviembre de 2022 y son las 14:32 horas
+Puedes ayudarte del objeto Date.*/
+
+        let fecha = new Date();
+        let dia = fecha.getDay();
+        let diaMes = fecha.getDate();
+        let mes = fecha.getMonth();
+        let año = fecha.getFullYear();
+        let hora = fecha.getHours();
+        let minutos = fecha.getMinutes();
+        let segundos = fecha.getSeconds();
+
+        let dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        document.write("Hoy es " + dias[dia] + ", " + diaMes + " de " + meses[mes] + " de " + año + " y son las " + hora + ":" + minutos + ":" + segundos + " horas");
+
+        
+
+
+    </script>
+</body>
+</html>

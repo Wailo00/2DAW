@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Confeccione un formulario que solicite el ingreso del nombre de una persona. Luego que seleccione si es mayor de edad o no (por defecto inicializar en si),seguidamente el teléfono (cargar por defecto 453-) y por último en un textarea solicitar que ingrese comentarios. -->
+
+    <form action="ejer04.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br
+        ¿Es mayor de edad?
+        <label for="edad">SI</label>
+        <input type="radio" name="edad" id="edad" value="si" checked>
+        <label for="edad">NO</label>
+        <input type="radio" name="edad" id="edad" value="no">
+        <br>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" value="453-">
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    
+</body>
+</html>

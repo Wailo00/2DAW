@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Implementar un formulario que contenga una matriz de tres filas y tres columnas de elementos de tipo text. Hacer que el foco sea por columna, es decir primero tomará foco el text de la primer fila y primer columna, luego el text de la segunda fila y primer columna etc. (si no definimos la propiedad tabindex la carga de datos se efectua por fila) -->
+    
+    <form action="ejer05.php" method="post">
+        <table>
+            <tr>
+                <td><input type="text" name="text1" id="text1" tabindex="1"></td>
+                <td><input type="text" name="text2" id="text2" tabindex="2"></td>
+                <td><input type="text" name="text3" id="text3" tabindex="3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="text4" id="text4" tabindex="4"></td>
+                <td><input type="text" name="text5" id="text5" tabindex="5"></td>
+                <td><input type="text" name="text6" id="text6" tabindex="6"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="text7" id="text7" tabindex="7"></td>
+                <td><input type="text" name="text8" id="text8" tabindex="8"></td>
+                <td><input type="text" name="text9" id="text9" tabindex="9"></td>
+            </tr>
+        </table>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

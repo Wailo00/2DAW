@@ -1,0 +1,32 @@
+<!DOCTYPE >
+<html>
+
+<head>
+
+
+</head>
+<body>
+
+<script>
+/*Haz una página Web que pregunte al usuario el nombre
+ y luego lo incluya en un saludo dentro del cuerpo de la página. 
+ Si el usuario no rellena el nombre (pulsa en “Cancelar”), debe aparecer de nuevo la solicitud.*/
+while(nombre==null){
+var nombre = prompt("Introduce tu nombre:", "");
+}
+
+if(nombre == null){
+    document.write("No has introducido tu nombre");
+}
+else{
+    document.write("Hola " + nombre);
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+

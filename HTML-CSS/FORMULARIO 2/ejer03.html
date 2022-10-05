@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Confeccionar un formulario que solicite los datos personales de una persona y los datos del lugar donde trabaja, cada grupo de datos disponerlos en un fieldset. -->
+
+    <!--formulario que pida el nombre y lo rodee de un borde-->
+
+    <form action="ejer03.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellido">Apellido y nombre:</label>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <label for="edad">Documento de identidad:</label>
+            <input type="text" name="edad" id="edad">
+            <br>
+            <label for="direccion">Fecha de nacimiento:</label>
+            <input type="text" name="direccion" id="direccion">
+            <br>
+            <label for="telefono">Direccion:</label>
+            <input type="text" name="telefono" id="telefono">
+            <br>
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos laborales</legend>
+            <label for="empresa">Ingrese el nombre de la empresa:</label>
+            <input type="text" name="empresa" id="empresa">
+            <br>
+            <label for="direccionEmpresa">Nombre de la empresa:</label>
+            <input type="text" name="direccionEmpresa" id="direccionEmpresa">
+            <br>
+            <label for="telefonoEmpresa">Actividad:</label>
+            <input type="text" name="telefonoEmpresa" id="telefonoEmpresa">
+            <br>
+            <label for="emailEmpresa">Direccion:</label>
+            <input type="text" name="emailEmpresa" id="emailEmpresa">
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+
+    
+</body>
+</html>

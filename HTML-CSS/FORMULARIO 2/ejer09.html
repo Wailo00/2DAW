@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Confeccionar una página que permita hacer un reclamo de reparaciones y se envíen los datos a una 
+    dirección de correo. Se debe poder ingresar el nombre, dirección y un comentario del problema. -->
+
+    <form action="ejer09.php" method="post">
+        <label for="nombre">Ingrese su Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="direccion">Ingrese su direccion</label>
+        <input type="text" name="direccion" id="direccion">
+        <br>
+        <label for="comentario">Informe del problema</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+
+</body>
+</html>
